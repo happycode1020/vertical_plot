@@ -239,13 +239,13 @@ def main_plot(cctmPath,wrfPath,sitePath,cmpFile,outdir,thistime,lon1,lon2,time_r
 			plot_pol_from_cmaq(cctm_file, cmpFile, north_index, gmp, lon, lon1, lon2, site_name, species_name, outdir)
 
 if __name__ == '__main__':
-	cctmPath = 'D:/jobs/聚光科技/谱育科技/202209/vertical_data'
-	wrfPath = 'D:/jobs/聚光科技/谱育科技/202209/vertical_data'
-	sitePath = 'D:/jobs/聚光科技/谱育科技/202209/vertical_data'
-	cmpFile = 'D:/jobs/聚光科技/谱育科技/202209/vertical_data/MPL_Blues.rgb'
+	cctmPath = './vertical_data'
+	wrfPath = './vertical_data'
+	sitePath = './vertical_data'
+	cmpFile = './vertical_data/MPL_Blues.rgb'
 	starttime = '20221005'
 	endtime = '20221005'
-	outdir = 'D:/jobs/聚光科技/谱育科技/202209/vertical_data/'+starttime
+	outdir = './vertical_data/'+starttime
 	yesterday = datetime.strptime(starttime, '%Y%m%d')+timedelta(days=-1)
 	preDay = datetime.strptime(starttime, '%Y%m%d')+timedelta(days=11)
 	time_range = yesterday.strftime('%Y%m%d')+'12_'+preDay.strftime('%Y%m%d')+'06'
